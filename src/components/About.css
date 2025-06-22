@@ -1,0 +1,33 @@
+/* Section styling remains the same */
+.about {
+  background-color: #f7f8fc;
+  padding: 60px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #4e54c8;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  padding: 0 10px;
+}

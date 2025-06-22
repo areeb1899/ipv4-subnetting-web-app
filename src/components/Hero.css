@@ -1,0 +1,47 @@
+/* Full section */
+.hero {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Container */
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Description */
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #4e54c8;
+  color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
