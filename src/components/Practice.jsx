@@ -88,7 +88,7 @@ const Practice = () => {
                         <input
                             key={idx}
                             type="number"
-                            value={octet}
+                             value={octet === 0 ? '' : octet}
                             min="0"
                             max="255"
                             className="target-octet"
