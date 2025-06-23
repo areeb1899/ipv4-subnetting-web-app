@@ -1,0 +1,150 @@
+/* IP Details Main Section */
+.ip-details-section {
+    background-color: #f7f8fc;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.ip-details-section h2 {
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+/* Loading & Error */
+.loading-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Layout Row: Side-by-side alignment with horizontal scroll fallback */
+.ip-layout-row {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Force side-by-side */
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex-start;
+    overflow-x: hidden;
+    /* Scroll instead of stacking on smaller screens */
+    padding-bottom: 10px;
+}
+
+/* IP Box (Left Side) */
+.ip-box {
+    flex: 0 0 55%;
+    min-width: 320px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.1);
+    font-size: 1rem;
+    line-height: 1.7;
+    border-left: 4px solid #4e54c8;
+}
+
+.ip-box p {
+    margin: 8px 0;
+}
+
+.ip-box strong {
+    color: #4e54c8;
+}
+
+/* Copy Button Row */
+.ip-copy-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-x: visible;
+}
+
+/* Copy Button */
+.copy-btn {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.copy-btn:hover {
+    background-color: #3a3fad;
+}
+
+/* Copied Feedback */
+.copied-msg {
+    font-size: 0.85rem;
+    color: green;
+    font-weight: 500;
+}
+
+/* Map Container (Right Side) */
+.map-container {
+    flex: 0 0 40%;
+    min-width: 280px;
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.1);
+    text-align: center;
+}
+
+.map-container h3 {
+    color: #4e54c8;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.map-container small a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Optional: Smooth scroll on small screens */
+.ip-layout-row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.ip-layout-row::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .ip-layout-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ip-box,
+    .map-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

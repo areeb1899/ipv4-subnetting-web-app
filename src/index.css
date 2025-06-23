@@ -1,6 +1,22 @@
-/* Reset margin and padding */
-* {
+/* Set full height on root elements */
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Flex wrapper for sticky footer layout */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Let main content grow to push footer down */
+.app-wrapper > *:not(footer) {
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: auto;
 }

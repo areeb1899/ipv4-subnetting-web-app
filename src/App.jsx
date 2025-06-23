@@ -9,30 +9,36 @@ import BinaryPage from './components/BinaryPage';
 import FlsmVlsm from './components/FlsmVlsm';
 import SubnettingCheatSheet from './components/SubnettingCheatSheet';
 import ErrorPage from './components/ErrorPage';
+import IPDetails from './components/IPDetails';
+import IPLookup from './components/IPLookup';
 
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Practice />
-              <About />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/binary-representation" element={<BinaryPage />} />
-        <Route path="/flsm-vlsm" element={<FlsmVlsm />} />
-        <Route path="/subnetting-cheat-sheet" element={<SubnettingCheatSheet />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </Router>
+    <div className='app-wrapper'>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Practice />
+                <About />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/binary-representation" element={<BinaryPage />} />
+          <Route path="/flsm-vlsm" element={<FlsmVlsm />} />
+          <Route path="/subnetting-cheat-sheet" element={<SubnettingCheatSheet />} />
+          <Route path="/ip-details" element={<IPDetails />} />
+          <Route path="/ip-lookup" element={<IPLookup />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
