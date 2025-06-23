@@ -1,0 +1,75 @@
+.binary-notes {
+    background: #f7f8fc;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.binary-notes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.binary-notes h2 {
+    color: #4e54c8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.binary-notes h3 {
+    color: #333;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.binary-notes p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.binary-notes code {
+    font-family: monospace;
+    background: #eaeaea;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.binary-notes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.binary-notes th,
+.binary-notes td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    text-align: center;
+}
+
+.binary-notes th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+
+.video-section {
+  margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.video-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #4e54c8;
+}
+
+.video-wrapper iframe {
+  border-radius: 8px;
+  max-width: 100%;
+}

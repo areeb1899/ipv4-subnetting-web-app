@@ -112,6 +112,7 @@ input:focus {
   text-transform: uppercase;
   font-size: 15px;
   transition: all 0.5s ease;
+  color:white;
 
 }
 
@@ -215,4 +216,26 @@ table button:hover {
 .dot {
   margin: 0 4px;
   font-weight: bold;
+}
+
+/* Binary representation */
+.binary-display {
+  margin-top: 30px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  background: #f3f4f8;
+  padding: 15px;
+  border-left: 4px solid #4e54c8;
+  border-radius: 6px;
+}
+
+.binary-display h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4e54c8;
+}
+
+.binary-display p {
+  margin: 4px 0;
+  word-break: break-word;
 }

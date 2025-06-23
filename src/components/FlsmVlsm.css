@@ -1,0 +1,70 @@
+.flsm-vlsm {
+  background: #f7f8fc;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.flsm-vlsm-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.flsm-vlsm h2 {
+  color: #4e54c8;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flsm-vlsm ul {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.flsm-vlsm strong {
+  color: #4e54c8;
+}
+
+.flsm-vlsm table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+.flsm-vlsm th,
+.flsm-vlsm td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.flsm-vlsm th {
+  background: #4e54c8;
+  color: white;
+}
+
+
+
+.cheat-sheet-link {
+    margin: 2rem;
+    text-align: center;
+}
+
+.cheat-sheet-link a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cheat-sheet-link a:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
