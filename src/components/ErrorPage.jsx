@@ -9,9 +9,13 @@ const ErrorPage = () => {
 
             <section className="error-page">
                 <div className="error-container">
-                    <h1>404</h1>
+                    <img src="/404.png" width="40%" alt="404" />
                     <p>Oops! The page you're looking for doesn't exist.</p>
-                    <Link to="/" className="home-link">Go back to Home</Link>
+                    <Link to="/" className="home-button">
+                        <span className="text">Go back to Home</span>
+                        <span className="arrow-slide">&larr;</span>
+                    </Link>
+
                 </div>
             </section>
             <Footer />

@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .error-container {
@@ -38,6 +39,58 @@
 .home-link:hover {
   background-color: #3b40a4;
 }
+
+
+
+.home-button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.home-button .text {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.home-button .arrow-slide {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 22px;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button:hover .text {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.home-button:hover .arrow-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
